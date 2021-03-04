@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        margin: 0 auto;
+        padding: 0 15px;
+        border: 1px solid red;
+      }
+ 
+      .button {
+        display: inline-block;
+        /* width: 50px; */
+        white-space: nowrap;
+        border: 1px solid red;
+        transition: 0.5s;
+        overflow-x: hidden;
+      }
+      .button span::after {
+        content: "Content";
+        display: inline-block;
+        transition: 0.5s;
+        overflow-x: hidden;
+        width: 0;
+      }
+      .button:hover span::after {
+        content: "Content";
+        display: inline-block;
+        width: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-6">
+          <img src="./Image_created_with_a_mobile_phone.png" alt="">
+        </div>
+        <div class="col-6">
+          <img src="./Image_created_with_a_mobile_phone.png" alt="">
+        </div> -->
+        <span class="button">
+          <span>
+            Bottun
+          </span>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
